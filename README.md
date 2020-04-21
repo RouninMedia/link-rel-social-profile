@@ -187,7 +187,7 @@ The `<link rel="social-profile">` element comprises **4 Parts**:
  - a LinkedIn Profile
  - a Twitter Account
  - a Strava Profile
- - a Webmasters Stack Exchange Profile etc.
+ - a GitHub Developer Profile etc.
 
 3) The second `rel` value, prefixed with `rel-`, is **optional** and indicates the *type of relationship* that the owner of the social-profile has to the current document.
 
@@ -208,6 +208,7 @@ ______
 
 ## Further thoughts on `<link rel="social-profile">`
 
+ - `<link rel="social-profile">` may only appear in the `<head>` of an HTML document
  - There is no limit to the number of `<link rel="social-profile">` elements in one document
  - There is no limit to the number of times a `rel-*` value may be reused
  
