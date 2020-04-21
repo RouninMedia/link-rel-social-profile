@@ -1,6 +1,8 @@
 # `<link rel="social-profile">`
 A proposal for a `<link>` element, declaring the relationships between an HTML document and any number of associated Social Media pages or profiles
 
+______
+
 ## Why do we need a `<link rel="social-profile">` ?
 
 Certain social media platforms established proprietary metadata long ago, showing how a web document might meaningfully declare a relationship with an individual page or profile on their platform.
