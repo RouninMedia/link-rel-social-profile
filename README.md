@@ -45,4 +45,77 @@ _______
 
 Yes, we absolutely can. But the `Schema.org` turns out to be a little verbose and clunky, due to the number of ***required properties*** needed on at least two separate levels of nesting.
 
-Here's an example of a `JSON-LD` + `Schema.org` describing an **article with four co-authors** (of different levels of seniority), one referencing two of their social media profiles, the others all referencing one each.
+Here's an example of a `JSON-LD` + `Schema.org` describing an **article with four co-authors** (of different levels of seniority), one referencing two of their social media profiles, the others all referencing one each:
+
+{
+  "@context": "http://schema.org/",
+  "@type": "Article",
+  "name" : "This Article",
+  "headline" : "This Article's Headline",
+  "datePublished" : "2020-04-21",
+  "image": "/this-article-image.jpg",
+
+  "author": [
+    {
+      "@type" : "Role",
+      "Name" : "I don't know what this is supposed to be",
+      "roleName" : "Guest Author",
+      "author": {
+        "@type": "Person",
+        "name": "Professor Plum",
+        "sameAs": [
+          "https://twitter.com/professor-plum"
+        ]
+      }
+    },
+
+    {
+      "@type" : "Role",
+      "Name" : "I don't know what this is supposed to be",
+      "roleName" : "Guest Author",
+      "author": {
+        "@type": "Person",
+        "name": "Mrs Peacock",
+        "sameAs": [
+          "https://twitter.com/mrs-peacock"
+        ]
+      }
+    },
+
+    {
+      "@type" : "Role",
+      "Name" : "I don't know what this is supposed to be",
+      "roleName" : "Guest Author",
+      "author": {
+        "@type": "Person",
+        "name": "Colonel Mustard",
+        "sameAs": [
+          "https://facebook.com/colonel-mustard"
+        ]
+      }
+    },
+
+    {
+      "@type" : "Role",
+      "Name" : "I don't know what this is supposed to be",
+      "roleName" : "Guest Author",
+      "author": {
+        "@type": "Person",
+        "name": "Miss Scarlett",
+        "sameAs": [
+          "https://linkedin.com/miss-scarlett",
+          "https://instagram.com/miss-scarlett"
+        ]
+      }
+    }
+  ],
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tudor Mansion Publications",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/tudor-mansion-logo.jpg"
+    }
+  }  
+}
