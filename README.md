@@ -1,4 +1,4 @@
-# rel-social-profile
+# `<link rel="social-profile">`
 A proposal for a `<link>` element, declaring the relationships between an HTML document and any number of associated Social Media pages or profiles
 
 ## Why do we need a `<link rel="social-profile">` ?
