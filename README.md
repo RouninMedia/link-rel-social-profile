@@ -37,7 +37,7 @@ That is:
 
 2) even when we can indicate the social profiles of an **article author** or **article publisher**, there is no syntax or formatting that enables us to indicate the social profiles of an article's **lead author** or **co-author** or **contributor** or the social profiles of a **guest editor** or of the subject(s) of the article (if, for example, the article was one profiling the work of an **architect** or an **artist** or a **writer/illustrator duo** or some collaborating **musicians** or a **team of app developers**.)
 
-What if, instead, there was a consistently formatted `<link>` element with a straightforward syntax, which could use any custom descriptor(s) to declare the relationship(s) of any social page(s) or profile(s) on any social media platform(s) to the current web document?
+_What if, instead, there was a consistently formatted `<link>` element with a straightforward syntax, which could use any custom descriptor(s) to declare the relationship(s) of any social page(s) or profile(s) on any social media platform(s) to the current web document?_
 
 _______
 
