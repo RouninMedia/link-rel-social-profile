@@ -129,5 +129,18 @@ Leaving aside for the moment the `name` property of the `"@type" : "Role"` (sinc
 
 With that in mind, what can we remove from the `JSON-LD`, above?
 
- - We can't remove the `"publisher"` section, because it's a required section of `"@type": "Article"`
- - We can't remove
+ - We can't remove the `"publisher"` from the top level, because it's a required property of `"@type": "Article"`
+ - We can't remove `@type": "Organization` because that's the expected `@type` for `"publisher"`
+ - We can't remove `"logo"` or `"name"` from  `"publisher"` because they're both required for `@type": "Organization`
+ - We can't remove `"name"` from the top level, because it's a required property of `"@type": "Article"`
+ - We can't remove `"headline"` from the top level, because it's a required property of `"@type": "Article"`
+ - We can't remove `"datePublished"` from the top level, because it's a required property of `"@type": "Article"`
+ - We can't remove `"image"` from the top level, because it's a required property of `"@type": "Article"`
+ - We can't remove `"name"` from above each `"roleName"`, because it's a required property of `"@type": "Role"`  
+ 
+Essentially, we can't remove anything from the `Schema.org` above.
+
+Not only that, but Google's [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+ 
+ 
+ 
