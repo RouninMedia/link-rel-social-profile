@@ -33,7 +33,7 @@ The problem with these proprietary formats is that they are:
 
 That is:
 
-1) there is nothing similar between `<meta name="twitter:creator">` and  `<meta property="article:author">`; and
+1) there is little similar between `<meta name="twitter:creator">` and  `<meta property="article:author">`; and
 
 2) even when we can indicate the social profiles of an **article author** or **article publisher**, there is no syntax or formatting that enables us to indicate the social profiles of an article's **lead author** or **co-author** or **contributor** or the social profiles of a **guest editor** or of the subject(s) of the article (if, for example, the article was one profiling the work of an **architect** or an **artist** or a **writer/illustrator duo** or some collaborating **musicians** or a **team of app developers**.)
 
