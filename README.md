@@ -140,7 +140,74 @@ With that in mind, what can we remove from the `JSON-LD`, above?
  
 Essentially, we can't remove anything from the `Schema.org` above.
 
-Not only that, but Google's [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
- 
- 
+Not only that, but Google's [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) gives additional warnings (not errors) for **two _further_ top-level fields** which it recommends ought to be included in the `Schema.org` above:
+
+ - the `dateModified` field is recommended. Please provide a value if available.
+ - The `mainEntityOfPage` field is recommended. Please provide a value if available.
+
+That's a lot of extra structured data when we're _only_ trying to communicate:
+
+ - a Relationship
+ - a Social Media URL
+
+So it's worth asking again:
+
+_What if, instead, there was a consistently formatted `<link>` element with a straightforward syntax, which could use any custom descriptor(s) to declare the relationship(s) of any social page(s) or profile(s) on any social media platform(s) to the current web document?_
+
+________
+
+## Introducing `<link rel="social-profile">`
+
+What would the data in the section immediately above look like, if it were formatted using `<link rel="social-profile">`?
+
+It would look like this:
+
+```
+<link rel="social-profile rel-lead-author" title="Professor Plum" href="https://twitter.com/professor-plum" />
+<link rel="social-profile rel-co-author" title="Mrs Peacock" href="https://twitter.com/mrs-peacock" />
+<link rel="social-profile rel-contributing-author" title="Colonel Mustard" href="https://facebook.com/colonel-mustard" />
+<link rel="social-profile rel-contributing-author" title="Miss Scarlett" href="https://linkedin.com/miss-scarlett" />
+<link rel="social-profile rel-contributing-author" title="Miss Scarlett" href="https://instagram.com/miss-scarlett" />
+```
+
+This represents the entirety of the data we wish to declare and no more.
+
+_____
+
+## The anatomy of `<link rel="social-profile">`
+
+The `<link rel="social-profile">` element comprises **4 Parts**:
+
+1) The `href` attribute is **compulsory** and its value gives the `URL` of the related social media page or profile.
+
+2) The `rel` value `social-profile` is **compulsory** and indicates that the URL value of the `href` attribute points to a *social media page or profile*. This could be pretty much any resource with a URL that might be recognised as part of the social web:
+
+ - a Facebook Page
+ - a Facebook Group
+ - a LinkedIn Profile
+ - a Twitter Account
+ - a Strava Profile
+ - a Webmasters Stack Exchange Profile etc.
+
+3) The second `rel` value, prefixed with `rel-`, is **optional** and indicates the *type of relationship* that the owner of the social-profile has to the current document.
+
+There are no predefined values which follow `rel-*` (much like the `data-*` custom attribute in HTML5, any word or series of hyphenated words will suffice), though conventions may arise over time, such that where the following are used:
+
+ - `rel="social-profile rel-blogger"`
+ - `rel="social-profile rel-writer"`
+ - `rel="social-profile rel-me"`
+ - `rel="social-profile rel-author"`
+
+eventually, the first three may all come to be regarded as secondary aliases of the quasi-standard:
+
+ - `rel="social-profile rel-author"`
+
+4) The `title` attribute is **optional** but where it is included, it indicates which `<link rel="social-profile">` elements refer to the same entity and which refer to distinct entities.
+
+______
+
+## Further thoughts on `<link rel="social-profile">`
+
+ - There is no limit to the number of `<link rel="social-profile">` elements in one document
+ - There is no limit to the number of times a `rel-*` value may be reused
  
