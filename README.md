@@ -47,6 +47,7 @@ Yes, we absolutely can. But the `Schema.org` turns out to be a little verbose an
 
 Here's an example of a `JSON-LD` + `Schema.org` describing an **article with four co-authors** (of different levels of seniority), one referencing two of their social media profiles, the others all referencing one each:
 
+```
 {
   "@context": "http://schema.org/",
   "@type": "Article",
@@ -119,3 +120,4 @@ Here's an example of a `JSON-LD` + `Schema.org` describing an **article with fou
     }
   }  
 }
+```
