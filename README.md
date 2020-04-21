@@ -121,3 +121,9 @@ Here's an example of a `JSON-LD` + `Schema.org` describing an **article with fou
   }  
 }
 ```
+Leaving aside for the moment the `name` property of the `"@type" : "Role"` (since I have no idea what it's supposed to represent), our first impression might be that the `JSON-LD` is rather long when all we want to do is declare relationships between the current web document and several social profiles.
+
+With that in mind, what can we remove from the `JSON-LD`, above?
+
+ - We can't remove the `"publisher"` section, because it's a required section of `"@type": "Article"`
+ - We can't remove
