@@ -1,5 +1,9 @@
 # `<link rel="social-profile">`
-A proposal for a `<link>` element, which can declare the relationships between an HTML document and any number of associated Social Media pages or profiles
+A proposal for a `<link>` element:
+```
+<link rel="social-profile rel-author" title="Alice" href="https://twitter.com/alice">
+```
+which can declare the relationships between an HTML document and any number of associated Social Media pages or profiles
 
 ______
 
