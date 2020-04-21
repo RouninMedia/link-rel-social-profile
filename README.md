@@ -59,7 +59,7 @@ Here's an example of a `JSON-LD` + `Schema.org` describing an **article with fou
   "author": [
     {
       "@type" : "Role",
-      "Name" : "I don't know what this is supposed to be",
+      "name" : "I don't know what this is supposed to be",
       "roleName" : "Guest Author",
       "author": {
         "@type": "Person",
@@ -72,7 +72,7 @@ Here's an example of a `JSON-LD` + `Schema.org` describing an **article with fou
 
     {
       "@type" : "Role",
-      "Name" : "I don't know what this is supposed to be",
+      "name" : "I don't know what this is supposed to be",
       "roleName" : "Guest Author",
       "author": {
         "@type": "Person",
@@ -85,7 +85,7 @@ Here's an example of a `JSON-LD` + `Schema.org` describing an **article with fou
 
     {
       "@type" : "Role",
-      "Name" : "I don't know what this is supposed to be",
+      "name" : "I don't know what this is supposed to be",
       "roleName" : "Guest Author",
       "author": {
         "@type": "Person",
@@ -98,7 +98,7 @@ Here's an example of a `JSON-LD` + `Schema.org` describing an **article with fou
 
     {
       "@type" : "Role",
-      "Name" : "I don't know what this is supposed to be",
+      "name" : "I don't know what this is supposed to be",
       "roleName" : "Guest Author",
       "author": {
         "@type": "Person",
