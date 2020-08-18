@@ -34,7 +34,9 @@ ______
 
 ## Do we really need this? If we don't use `<link rel="me">`, why do we need a `<link rel="social-profile">` ?
 
-We don't use `<link rel="me">` because it was never really pushed as a universal standard. Instead it was **Google+**'s response to the proprietary metadata introduced not long before by social media platforms like Twitter and Facebook. In all cases, the metadata enabled web documents to meaningfully declare a relationship with an individual page or profile on their platform.
+We don't use `<link rel="me">` because it was never really pushed as a universal standard. Instead it was **Google+**'s response to the proprietary metadata introduced not long before by social media platforms like **Twitter** and **Facebook**.
+
+In all cases, each separately formatted snippet of metadata enabled a web document to meaningfully declare a relationship with an individual page or profile on one particular platform.
 
 For instance, an article on the *Neverland News* blog might contain amongst its metadata the markup:
 
