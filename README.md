@@ -5,6 +5,24 @@ A proposal for a `<link>` element:
 ```
 which can declare the relationships between an HTML document and any number of associated Social Media pages or profiles.
 
+It's much less common today in 2020, but in the early to mid 2010s `<link rel="me">` enjoyed a brief burst of popularity, propelled by **Google Authorship** markup.
+
+This proposal communicates the same data but enables tagging of multiple individuals and / or organisations.
+
+Instead of:
+```
+<link rel="me" href="https://twitter.com/modesty-blaise">
+<link rel="me" href="https://github.com/modesty-blaise">
+<link rel="me" href="https://facebook.com/modesty-blaise">
+```
+
+we may write:
+```
+<link rel="social-profile rel-author" title="Modesty Blaise" href="https://twitter.com/modesty-blaise">
+<link rel="social-profile rel-author" title="Modesty Blaise" href="https://github.com/modesty-blaise">
+<link rel="social-profile rel-author" title="Modesty Blaise" href="https://facebook.com/modesty-blaise">
+```
+
 ______
 
 ## Why do we need a `<link rel="social-profile">` ?
