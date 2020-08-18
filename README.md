@@ -7,7 +7,7 @@ which can declare the relationships between an HTML document and any number of a
 
 It's much less common today in 2020, but in the early to mid 2010s `<link rel="me">` enjoyed a brief burst of popularity, propelled by **Google Authorship** markup.
 
-This proposal communicates the same sort of data but enables tagging of multiple individuals and / or organisations and allows for the inclusion of both role and name.
+This proposed `<link>` communicates the same sort of data but enables tagging of multiple individuals and / or organisations and allows for the inclusion of both role and name.
 
 Instead of:
 ```
