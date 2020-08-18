@@ -5,9 +5,16 @@ A proposal for a `<link>` element:
 ```
 which can declare the relationships between an HTML document and any number of associated Social Media pages or profiles.
 
-It's much less common today in 2020, but in the early to mid 2010s `<link rel="me">` enjoyed a brief burst of popularity, propelled by **Google Authorship** markup.
+## Doesn't `<link rel="me">` already exist?
 
-This proposed `<link>` communicates the same sort of data but enables tagging of multiple individuals and / or organisations and allows for the inclusion of both role and name.
+It's true that `<link rel="me">` already exists.
+
+It's much less common today in 2020, but in the early 2010s `<link rel="me">` enjoyed a brief burst of popularity, propelled by **Google Authorship** markup.
+
+This proposed `<link>` communicates the same sort of data as `<link rel="me">` but:
+
+ - it enables tagging of multiple individuals and / or organisations; and
+ - it also allows for the inclusion of each individual's or organisation's **role** and **name**
 
 Instead of:
 ```
@@ -25,9 +32,9 @@ we may write:
 
 ______
 
-## Why do we need a `<link rel="social-profile">` ?
+## Do we really need this? If we don't use `<link rel="me">`, why do we need a `<link rel="social-profile">` ?
 
-Certain social media platforms established proprietary metadata long ago, showing how a web document might meaningfully declare a relationship with an individual page or profile on their platform.
+We don't use `<link rel="me">` because it was never really pushed as a universal standard. Instead it was **Google+**'s response to the proprietary metadata introduced not long before by social media platforms like Twitter and Facebook. In all cases, the metadata enabled web documents to meaningfully declare a relationship with an individual page or profile on their platform.
 
 For instance, an article on the *Neverland News* blog might contain amongst its metadata the markup:
 
